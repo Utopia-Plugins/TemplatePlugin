@@ -1,0 +1,3 @@
+language: "English"
+master:
+  test: "This is the LanguageModule Test"

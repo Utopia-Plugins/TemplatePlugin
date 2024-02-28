@@ -1,0 +1,10 @@
+name: TemplatePlugin
+version: '${project.version}'
+main: de.linushuck.templateplugin.TemplatePlugin
+api-version: '1.18'
+depend:
+  - ServerPlugin
+commands:
+  templateplugin:
+    description: TemplatePlugin Commands
+    usage: /templateplugin
