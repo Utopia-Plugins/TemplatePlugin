@@ -1,6 +1,7 @@
 package de.linushuck.templateplugin;
 
 import de.linushuck.helperlibary.modules.ModuleHandler;
+import de.linushuck.helperlibary.modules.language.Language;
 import de.linushuck.helperlibary.modules.language.LanguageModule;
 import de.linushuck.helperlibary.utils.Logger;
 import de.linushuck.helperlibary.utils.PluginUtils;
@@ -32,6 +33,9 @@ public final class TemplatePlugin extends JavaPlugin
         moduleHandler.loadModules();
 
         activateCommands();
+
+        Logger.info(this, "LanguageModelExample", LanguageModule.getString("master.test", Language.English));
+        getComponentLogger().info(LanguageModule.getComponent("master.test2", Language.English));
 
         Logger.info(this,"Template", "<green>" + PluginUtils.compiledAgoMessage(this) + "</green>");
     }

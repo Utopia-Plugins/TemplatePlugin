@@ -1,3 +1,4 @@
 language: "English"
 master:
   test: "This is the LanguageModule Test"
+  test2: "<yellow>This is the LanguageModule Test</yellow>"
